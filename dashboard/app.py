@@ -21,9 +21,9 @@ page = st.sidebar.selectbox("Pilih Halaman", ["Home", "Top 10 Kota", "Top 10 Pro
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    top_10_cities = pd.read_csv('top_10_cities.csv')
-    top_10_products = pd.read_csv('top_10_products.csv')
-    plots_data = pd.read_csv('plots_data.csv')
+    top_10_cities = pd.read_csv('data/top_10_cities.csv')
+    top_10_products = pd.read_csv('data/top_10_products.csv')
+    plots_data = pd.read_csv('data/plots_data.csv')
     return top_10_cities, top_10_products, plots_data
 
 # Memuat data
